@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Islame" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Islame" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="colorPrimaryDark">@color/primary_color_200</item>
+    </style>
+    <style name="Theme.asly" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.TV_MainHeder" parent="android:Theme.Material.Light.NoActionBar" >
+
+
+    </style>
+
 </resources>
