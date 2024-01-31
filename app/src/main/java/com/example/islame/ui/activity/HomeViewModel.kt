@@ -4,5 +4,8 @@ import androidx.lifecycle.ViewModel
 
 class HomeViewModel {
 
-  var   myText="home screen "
+  var   myText="إسلامي "
+
+
+
 }

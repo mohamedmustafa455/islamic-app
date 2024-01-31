@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">islame</string>
+    <string name="app_name">islamic</string>
+    <string name="nameappinactionbar"> islam </string>
+    <string name="quran"> quran </string>
+    <string name="ahadeth"> hadeth </string>
+    <string name="sebha"> sebha </string>
+    <string name="Radio"> Radio </string>
+
 </resources>

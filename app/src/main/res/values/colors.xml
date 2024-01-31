@@ -2,9 +2,10 @@
 <resources>
     <color name="primary_color_200">#B7935F</color>
     <color name="purple_500">#BFA37A</color>
-    <color name="secandry_clolr_700">#B7935F</color>
+    <color name="secandry_clolr_700">#C5AE8E</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_700">#ff242424</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="textcolor">#ff242424</color>
 </resources>

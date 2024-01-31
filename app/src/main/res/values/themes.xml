@@ -3,6 +3,10 @@
 
     <style name="Theme.Islame" parent="Theme.MaterialComponents.Light.NoActionBar" >
         <item name="colorPrimaryDark">@color/primary_color_200</item>
+        <item name="android:colorPrimary">@color/secandry_clolr_700</item>
+        <item name="colorPrimaryVariant">@color/primary_color_200</item>
+    <item name="android:statusBarColor">@color/secandry_clolr_700</item>
+        <item name="background"></item>
     </style>
     <style name="Theme.asly" parent="android:Theme.Material.Light.NoActionBar" />
 
