@@ -30,16 +30,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="@string/nameappinactionbar"
             />
+        <FrameLayout
+            android:id="@+id/frame_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_app_bar_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_navigation"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/btn_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/main_bottom_nav_menu"
-            android:background="@color/primary_color_200"
+            android:background="@color/orange"
+            app:itemIconSize="32dp"
+            app:itemIconTint="@color/ic_color_main_nav_bar"
+            app:itemRippleColor="@color/ligth_white"
+            app:itemTextColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/main_bottom_nav_menu" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
