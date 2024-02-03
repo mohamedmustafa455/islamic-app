@@ -28,16 +28,23 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+    var currentFragmen:Fragment?=null
+    var quranFragment=QranFragment()
+    var ahadethFragment=AhadethFragment()
+    var sebhaFragment=SephaFragment()
+    var radioFragment =RadioFragment()
     fun onItemSelected(){
         binding.btnNavigation.setOnItemSelectedListener {itemMenuSelected ->
             if(itemMenuSelected.itemId == R.id.btn_radio){
-               startFragment(RadioFragment())
+               startFragment(radioFragment)
+
             }else if (itemMenuSelected.itemId == R.id.btn_ahadeth){
-                startFragment(AhadethFragment())
+                startFragment(ahadethFragment)
+
             }else if (itemMenuSelected.itemId == R.id.btn_sebha){
-               startFragment(SephaFragment())
+               startFragment(sebhaFragment)
             }else if(itemMenuSelected.itemId==R.id.btn_qoran){
-               startFragment(QranFragment())
+               startFragment(quranFragment)
             }
             return@setOnItemSelectedListener true
         }
@@ -47,5 +54,23 @@ class HomeActivity : AppCompatActivity() {
             .addToBackStack(null)
             .replace(R.id.frame_home,fragment)
             .commit()
+        currentFragmen = fragment
     }
+
+//    override fun onBackPressed() {
+//        if (currentFragmen == quranFragment){
+//            binding.btnNavigation.selectedItemId = R.id.btn_qoran
+//
+//        }else if (currentFragmen==ahadethFragment){
+//            binding.btnNavigation.selectedItemId = R.id.btn_ahadeth
+//
+//        }else if (currentFragmen==sebhaFragment){
+//            binding.btnNavigation.selectedItemId = R.id.btn_sebha
+//
+//        }else if(currentFragmen==radioFragment){
+//            binding.btnNavigation.selectedItemId = R.id.btn_radio
+//
+//        }
+//        super.onBackPressed()
+//    }
 }
