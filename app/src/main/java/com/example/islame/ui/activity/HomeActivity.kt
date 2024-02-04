@@ -24,7 +24,8 @@ class HomeActivity : AppCompatActivity() {
         //intial fragment qran
         startFragment(QranFragment())
         //fragment selected
-        onItemSelected()
+        onItemSelected()// comment
+        //comment 2
 
 
     }
