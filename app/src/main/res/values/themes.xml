@@ -11,8 +11,8 @@
     <style name="Theme.asly" parent="android:Theme.Material.Light.NoActionBar" />
 
     <style name="Theme.TV_MainHeder" parent="android:Theme.Material.Light.NoActionBar" >
-
-
     </style>
+
+
 
 </resources>
