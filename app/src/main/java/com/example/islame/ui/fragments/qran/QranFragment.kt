@@ -7,26 +7,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.islame.R
+import com.example.islame.databinding.FragmentQranBinding
 
 class QranFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = QranFragment()
-    }
 
     private lateinit var viewModel: QranViewModel
+    private lateinit var binding : FragmentQranBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_qran, container, false)
+    ): View {
+        binding=FragmentQranBinding.inflate(inflater,container,false)
+
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(QranViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+
     }
+
+
 
 }
