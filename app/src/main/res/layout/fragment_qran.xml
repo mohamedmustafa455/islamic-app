@@ -22,7 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/orange"
-
         app:layout_constraintTop_toBottomOf="@id/imag_header_qran"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/soraname"
-        android:textSize="32sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/line_up_header"
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="@string/header_cont_iat"
         android:textColor="@color/black"
-        android:textSize="32sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/line_up_header"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +67,19 @@
 
         />
 
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_name_of_sora"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/line_down_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_name_of_sora_and_count_iat"/>
+
     <View
         android:id="@+id/line_vertical_header"
         android:layout_width="3dp"
@@ -78,15 +90,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_name_of_sora"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/line_down_header"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:listitem="@layout/item_name_of_sora_and_count_iat"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
