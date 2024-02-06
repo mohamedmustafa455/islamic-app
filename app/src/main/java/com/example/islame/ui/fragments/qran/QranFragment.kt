@@ -1,13 +1,12 @@
 package com.example.islame.ui.fragments.qran
 
 import android.content.Intent
-import androidx.lifecycle.ViewModelProvider
+//import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.example.islame.databinding.FragmentQranBinding
 import com.example.islame.models.Constans
 import com.example.islame.ui.activity.detailesqran.DetailsQranActivity
@@ -15,7 +14,7 @@ import com.example.islame.ui.activity.detailesqran.DetailsQranActivity
 class QranFragment : Fragment() {
 
 
-    private lateinit var viewModel: QranViewModel
+   // private lateinit var viewModel: QranViewModel
     private lateinit var binding : FragmentQranBinding
     private lateinit var adapter: QranAdaptr
 
@@ -53,10 +52,10 @@ class QranFragment : Fragment() {
         binding.recyclerViewNameOfSora.adapter=adapter
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(QranViewModel::class.java)
-
-    }
+//    override fun onActivityCreated(savedInstanceState: Bundle?) {
+//        super.onActivityCreated(savedInstanceState)
+//        viewModel = ViewModelProvider(this).get(QranViewModel::class.java)
+//
+//    }
 
 }

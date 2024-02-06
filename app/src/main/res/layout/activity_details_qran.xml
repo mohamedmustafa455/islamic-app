@@ -36,13 +36,11 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <TextView
                 android:id="@+id/tv_sora_sora_name_details_Qoran"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sora name "
-                android:textAlignment="center"
+                tools:text="sora name "
                 android:gravity="center"
                 android:textSize="25sp"
                 android:layout_marginTop="39dp"
@@ -76,9 +74,9 @@
                     android:id="@+id/tv_content_qran"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="content "
+                    tools:text="content "
                     android:textSize="20sp"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:layout_marginTop="12dp"
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideOverlay"
