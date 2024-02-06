@@ -20,6 +20,15 @@ class QranAdaptr(var dataofArray: ArrayList<SoraDM> ):RecyclerView.Adapter<QranA
         val data =dataofArray[position]
 
         holder.bind(data)
+
+
+        onSoraClick?.let {
+
+            holder.binding.root.setOnClickListener {
+                onSoraClick?.onClicked(data,position)
+            }
+        }
+
     }
 
     override fun getItemCount(): Int {
@@ -34,8 +43,14 @@ class QranAdaptr(var dataofArray: ArrayList<SoraDM> ):RecyclerView.Adapter<QranA
             binding.tvCountIat.text=data.aiatCount
         }
 
-
     }
+    //added call back
+
+   fun   interface OnItemClick{
+        fun onClicked(itemdata:SoraDM, position :Int )
+    }
+
+    var  onSoraClick:OnItemClick?=null
 
 
 }

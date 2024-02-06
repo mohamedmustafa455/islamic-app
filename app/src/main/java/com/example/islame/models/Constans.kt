@@ -3,6 +3,10 @@ package com.example.islame.models
 abstract class Constans{
 
     companion object{
+        val SORANAME:String="SORANAME"
+        val AIATCONT:String="AIATCOUNT"
+        val POSITINSORA:String="POSITION"
+
         val soraNames = listOf<String>("الفاتحه","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود"
             ,"يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون"
             ,"النّور","الفرقان","الشعراء","النّمل","القصص","العنكبوت","الرّوم","لقمان","السجدة","الأحزاب","سبأ"
