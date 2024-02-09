@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     tools:text="content "
                     android:textSize="20sp"
-                    android:gravity="end"
+                    android:gravity="start"
                     android:layout_marginTop="12dp"
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideOverlay"

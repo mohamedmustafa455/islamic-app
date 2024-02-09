@@ -5,14 +5,18 @@
         <item name="colorPrimaryDark">@color/orange</item>
         <item name="android:colorPrimary">@color/light_orang</item>
         <item name="colorPrimaryVariant">@color/orange</item>
+
     <item name="android:statusBarColor">@color/light_orang</item>
-        <item name="background"></item>
+
     </style>
     <style name="Theme.asly" parent="android:Theme.Material.Light.NoActionBar" />
 
     <style name="Theme.TV_MainHeder" parent="android:Theme.Material.Light.NoActionBar" >
     </style>
 
+    <style name="Button.orange" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/orange</item>
+    </style>
 
 
 </resources>

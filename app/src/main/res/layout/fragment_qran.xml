@@ -30,19 +30,6 @@
         />
 
     <TextView
-        android:id="@+id/tv_header_sora_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/soraname"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/line_up_header"
-        app:layout_constraintStart_toEndOf="@id/tv_header_count_iat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/line_down_header"/>
-
-    <TextView
         android:id="@+id/tv_header_count_iat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,9 +37,22 @@
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/line_up_header"
+        app:layout_constraintStart_toEndOf="@id/tv_header_sora_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line_down_header"/>
+
+    <TextView
+        android:id="@+id/tv_header_sora_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soraname"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/line_up_header"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_header_sora_name"
+        app:layout_constraintEnd_toStartOf="@id/tv_header_count_iat"
         app:layout_constraintBottom_toTopOf="@id/line_down_header"/>
 
     <View

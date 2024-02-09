@@ -7,6 +7,13 @@ abstract class Constans{
         val AIATCONT:String="AIATCOUNT"
         val POSITINSORA:String="POSITION"
 
+
+        val SOBHANAALLA:String =" سبحان الله "
+        val ELHAMDLLALLA:String=" الحمد للة "
+        val ALLAHAKBER:String=" اللة اكبر "
+        val SOBHANAALLAWABEHAMDEH:String = "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير"
+
+
         val soraNames = listOf<String>("الفاتحه","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود"
             ,"يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون"
             ,"النّور","الفرقان","الشعراء","النّمل","القصص","العنكبوت","الرّوم","لقمان","السجدة","الأحزاب","سبأ"

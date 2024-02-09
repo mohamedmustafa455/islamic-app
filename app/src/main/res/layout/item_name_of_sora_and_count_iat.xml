@@ -7,21 +7,6 @@
 
 
     <TextView
-        android:id="@+id/tv_count_iat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/test_count_iat"
-        android:textSize="22sp"
-        android:textColor="@color/light_black"
-        android:textAlignment="center"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_sora_name"
-        />
-
-    <TextView
         android:id="@+id/tv_sora_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +17,22 @@
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_count_iat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_count_iat"
+        />
+
+    <TextView
+        android:id="@+id/tv_count_iat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_count_iat"
+        android:textSize="22sp"
+        android:textColor="@color/light_black"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_sora_name"
         app:layout_constraintEnd_toEndOf="parent"/>
 
 
