@@ -9,10 +9,10 @@ import java.io.InputStream
 import java.io.InputStreamReader
 
 class DetailsQranActivity : AppCompatActivity() {
-    lateinit var binding: ActivityDetailsQranBinding
-    lateinit var fileName:String
-    lateinit var soraName :String
-    var aiatcont  :Int = 0
+    private lateinit var binding: ActivityDetailsQranBinding
+    private lateinit var fileName:String
+    private lateinit var soraName :String
+    private var aiatcont  :Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
