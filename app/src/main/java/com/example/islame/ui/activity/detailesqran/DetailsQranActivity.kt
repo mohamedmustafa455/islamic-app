@@ -50,10 +50,10 @@ class DetailsQranActivity : AppCompatActivity() {
         val inputStream: InputStream = assets.open(fileName)
      //   val inputString = inputStream.bufferedReader().use { it.readText() }
 
-        var reader =BufferedReader(InputStreamReader(inputStream))
-        var fileLine:List<String> = reader.readLines()
-        var fileContent :String = fileLine.joinToString(separator = " ") {
-            var index =fileLine.indexOf(it) +1
+        val reader =BufferedReader(InputStreamReader(inputStream))
+        val fileLine:List<String> = reader.readLines()
+        val fileContent :String = fileLine.joinToString(separator = " ") {
+            val index =fileLine.indexOf(it) +1
             return@joinToString it  +" { ${index} }"
         }
 
