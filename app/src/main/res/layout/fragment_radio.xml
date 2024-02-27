@@ -7,11 +7,60 @@
     tools:context=".ui.fragments.radio.RadioFragment">
 
     <ImageView
+        android:id="@+id/imag_header_radio"
         android:layout_width="300dp"
         android:layout_height="208dp"
         android:src="@drawable/radioheader"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_name_channel_radio"/>
+
+
+    <TextView
+        android:id="@+id/tv_name_channel_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" قناة القران الكريم "
+        android:textColor="@color/light_black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/imag_header_radio"
+        app:layout_constraintBottom_toTopOf="@id/ic_playback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ic_playback"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play_radio"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_channel_radio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_right_change_radio"
+        android:layout_width="16dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_left_change_radio"
+        app:layout_constraintBottom_toBottomOf="@id/ic_playback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ic_playback"
+        app:layout_constraintTop_toTopOf="@id/ic_playback" />
+
+    <ImageView
+        android:id="@+id/ic_left_change_radio"
+        android:layout_width="16dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_right_change_radio"
+        app:layout_constraintTop_toTopOf="@id/ic_playback"
+        app:layout_constraintBottom_toBottomOf="@id/ic_playback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf ="@id/ic_playback"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

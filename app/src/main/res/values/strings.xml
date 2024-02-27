@@ -5,5 +5,12 @@
     <string name="ahadeth"> hadeth </string>
     <string name="sebha"> sebha </string>
     <string name="Radio"> Radio </string>
+    <string name="soraname">إسم السورة</string>
+    <string name="header_cont_iat">عدد الايات</string>
+    <string name="test_name_of_sora">سورة البقرة</string>
+    <string name="test_count_iat">286</string>
+    <string name="zekrsobhanallh">سبحان الله</string>
+    <string name="cont_sebha">1</string>
+    <string name="text_cont_sepha">عدد التسبيحات</string>
 
 </resources>

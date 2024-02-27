@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> اسلامي </string>
+    <string name="nameappinactionbar"> اسلامي </string>
+    <string name="quran"> قران </string>
+    <string name="ahadeth"> حديث </string>
+    <string name="sebha"> سبحة </string>
+    <string name="Radio"> راديو </string>
+    <string name="soraname">إسم السورة</string>
+    <string name="header_cont_iat">عدد الايات</string>
+    <string name="test_name_of_sora">سورة البقرة</string>
+    <string name="test_count_iat">286</string>
+    <string name="zekrsobhanallh">سبحان الله</string>
+    <string name="cont_sebha">1</string>
+    <string name="text_cont_sepha">عدد التسبيحات</string>
+
+</resources>
