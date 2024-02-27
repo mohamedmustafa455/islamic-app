@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.islame.databinding.ActivityDetailsQranBinding
 import com.example.islame.models.Constans
+import java.io.BufferedReader
 import java.io.InputStream
+import java.io.InputStreamReader
 
 class DetailsQranActivity : AppCompatActivity() {
     lateinit var binding: ActivityDetailsQranBinding
@@ -46,11 +48,28 @@ class DetailsQranActivity : AppCompatActivity() {
 
     private fun readFile():String{
         val inputStream: InputStream = assets.open(fileName)
-        val inputString = inputStream.bufferedReader().use { it.readText() }
+     //   val inputString = inputStream.bufferedReader().use { it.readText() }
 
-        return inputString
+        var reader =BufferedReader(InputStreamReader(inputStream))
+        var fileLine:List<String> = reader.readLines()
+        var fileContent :String = fileLine.joinToString(separator = " ") {
+            var index =fileLine.indexOf(it) +1
+            return@joinToString it  +" { ${index} }"
+        }
+
+        return  fileContent
+       // return inputString
 // Now inputString contains the content of the asset file
     }
+
+    //read file without num of aiat
+//    private fun readFile2():String{
+//        val inputStream: InputStream = assets.open(fileName)
+//        val inputString = inputStream.bufferedReader().use { it.readText() }
+//
+//         return inputString
+//// Now inputString contains the content of the asset file
+//    }
 
 
 }
