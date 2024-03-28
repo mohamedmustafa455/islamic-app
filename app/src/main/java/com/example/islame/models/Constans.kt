@@ -7,6 +7,9 @@ abstract class Constans{
         val AIATCONT:String="AIATCOUNT"
         val POSITINSORA:String="POSITION"
 
+        val NAMEHADEETH:String="TITLE"
+        val CONTENTHADEETH:String="BODY"
+
 
         val SOBHANAALLA:String =" سبحان الله "
         val ELHAMDLLALLA:String=" الحمد للة "
@@ -123,6 +126,7 @@ abstract class Constans{
             SoraDM("الشرح", "8"),
             SoraDM("التين", "8"),
             SoraDM("العلق", "19"),
+            SoraDM("القدر", "5"),
             SoraDM("البينة", "8"),
             SoraDM("الزلزلة", "8"),
             SoraDM("العاديات", "11"),
@@ -134,6 +138,10 @@ abstract class Constans{
             SoraDM("قريش", "4"),
             SoraDM("الماعون", "7"),
             SoraDM("الكوثر", "3"),
+            SoraDM("الكافرون", "6"),
+            SoraDM("النصر", "3"),
+            SoraDM("المسد", "5"),
+            SoraDM("الاخلاص", "4"),
             SoraDM("الفلق", "5"),
             SoraDM("الناس", "6")
 

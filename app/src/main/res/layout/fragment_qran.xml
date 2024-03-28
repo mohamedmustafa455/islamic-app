@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.20"
         />
+
     <View
         android:id="@+id/line_up_header"
         android:layout_width="match_parent"
@@ -67,8 +68,6 @@
 
         />
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_name_of_sora"
         android:layout_width="match_parent"
@@ -90,4 +89,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

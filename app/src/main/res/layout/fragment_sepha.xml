@@ -41,23 +41,22 @@
         android:id="@+id/btn_cont_sebha"
         android:layout_width="69dp"
         android:layout_height="81dp"
-        android:theme="@style/Button.orange"
         android:backgroundTint="@color/orange"
-
+        app:cornerRadius="25dp"
         android:text="@string/cont_sebha"
         android:layout_marginTop="26dp"
         android:layout_gravity="center"
-
         app:layout_constraintTop_toBottomOf="@id/tv_cont_sepha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_name_zekr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/orange"
+        app:cornerRadius="25dp"
         android:text="@string/zekrsobhanallh"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
